@@ -1,9 +1,13 @@
 class Airport {
   constructor () {
-    this.lines = []
+    this.airport = []
   }
 
   land(plane) {
+    return true;
+  }
+
+  takeOff(plane) {
     return true;
   }
 }
