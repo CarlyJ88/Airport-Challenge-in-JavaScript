@@ -34,4 +34,17 @@ describe('Airport', function () {
 
     expect(() => aiport.land(plane)).toThrow('Cannot land plane: Airport is full')
   })
+
+  it('Capacity can change', function () {
+    var aiport = new Airport(40);
+    var plane = new Plane();
+    var capacity = 40;
+
+    for (let i = 0; i < capacity; i++){
+      aiport.land(plane)
+    }
+
+    expect(() => aiport.land(plane)).toThrow('Cannot land plane: Airport is full')
+  })
 })
+
