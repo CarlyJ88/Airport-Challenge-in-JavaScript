@@ -9,6 +9,9 @@ class Airport {
     if (this.airport.length >= this.capacity) {
       throw new Error('Cannot land plane: Airport is full');
     }
+    if (this.weather.isStormy()) {
+      throw new Error('Plane cannot land: weather is stormy')
+    }
     this.airport.push(plane);
     return true;
   }

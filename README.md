@@ -24,3 +24,8 @@ I would like a default airport capacity that can be overridden as appropriate`
 `As an air traffic controller 
 To ensure safety 
 I want to prevent takeoff when weather is stormy`
+
+#### Story 6
+`As an air traffic controller 
+To ensure safety 
+I want to prevent landing when weather is stormy`
